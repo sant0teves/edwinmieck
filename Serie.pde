@@ -14,8 +14,8 @@ class Serie {
     y = dist *sin(ang);
     t = width/cant;
     haySonido = false;
-    paleta = new color[] {color(#F8FCDA), color(#E3E9C2), color(#F9FBB2), color(#7C6354),color(#A5ABAF)};
-    paleta_ = new color[] {color(#320A28), color(#511730), color(#8E443D), color(#CB9173),color(#E0D68A)};
+    paleta = new color[] {color(#BDB351), color(#BBBBB3), color(#BFBE7D), color(#C9C1BC),color(#90A159)};
+    paleta_ = new color[] {color(#52505D), color(#29524A), color(#545931), color(#2F524C),color(#283C54)};
     a = color( paleta[ int( random(5) ) ] );
     b = color( paleta_[ int( random(5) ) ] );
     c = color( paleta_[ int( random(5) ) ] );
