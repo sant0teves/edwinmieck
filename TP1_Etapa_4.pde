@@ -4,8 +4,15 @@ GestorSenial gestorAmp;
 GestorSenial gestorPitch;
 Serie s;
 //-----------------------
-float umbralAmp = 45;
+
+float minAmp = 60;
+float maxAmp = 90;
+
+float minPitch = 45;
+float maxPitch = 100;
+
 float amorti = 0.9;
+
 //--------------------
 float amp = 0;
 float pitch= 0;
@@ -17,8 +24,8 @@ void setup() {
   colorMode(HSB, 100);
   osc = new OscP5(this, 12345);
   s = new Serie();
-  gestorAmp = new GestorSenial(umbralAmp, 100, amorti);
-  gestorPitch = new GestorSenial(umbralAmp, 80, amorti);
+  gestorAmp = new GestorSenial(minAmp, maxAmp, amorti);
+  gestorPitch = new GestorSenial(minPitch, maxPitch, amorti);
 }
 
 void draw() {
